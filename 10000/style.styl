@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=K2D:400,700&display=swap')
+
+charleston-green = #2a2b2a
+dim-gray = #706c61
+linen = #f8f4e3
+paradise-pink = #e5446d
+pink-orange = #ff8966
+
+body
+  background linen
+  color dim-gray
+  font-family "K2D", "Open Sans", sans-serif
+  > div
+    max-width 720px
+    margin 0 auto
+
+.model
+  position absolute
+  height 4rem
+  padding-top auto
+
+button
+  background-color paradise-pink
+  width 3em
+  height 3em
+  position fixed
+  top 1em
+  right 1em
+  border none
+  border-radius 20%
+
+.name
+  font-weight bold
+  color charleston-green
+  :first-child > &
+    color pink-orange

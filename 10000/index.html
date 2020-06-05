@@ -14,9 +14,8 @@ body {
 body > div {
   max-width: 720px;
   margin: 0 auto;
-  line-height: normal;
 }
-.model {
+.model li {
   position: absolute;
   height: 4rem;
   padding-top: auto;
@@ -26,59 +25,146 @@ button {
   width: 3em;
   height: 3em;
   position: fixed;
-  top: 1em;
   right: 1em;
   border: none;
   border-radius: 20%;
 }
+button:first-of-type {
+  top: 1em;
+}
+button:last-of-type {
+  bottom: 1em;
+}
 .name {
   font-weight: bold;
   color: #2a2b2a;
+  background-clip: text;
+  color: transparent;
 }
-:first-child > .name {
-  color: #ff8966;
+.name.tisa {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%);
+}
+.name.tisa-slana {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%);
+}
+.name.tisa-bodrog {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 62%, #2a2b2a 62%);
+}
+.name.bodrog {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%);
+}
+.name.ondava-topla {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.topla {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 78%, #2a2b2a 78%, #2a2b2a 81%, #ff8966 81%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.laborec-uh {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 76%, #2a2b2a 76%, #2a2b2a 79%, #ff8966 79%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.cirocha {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 76%, #2a2b2a 76%, #2a2b2a 79%, #ff8966 79%, #ff8966 83%, #2a2b2a 83%, #2a2b2a 93%, #ff8966 93%, #ff8966 97%, #2a2b2a 97%);
+}
+.name.uh {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 74%, #2a2b2a 74%, #2a2b2a 77%, #ff8966 77%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.trnavka {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 75%, #2a2b2a 75%, #2a2b2a 80%, #ff8966 80%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.ronava {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 74%, #2a2b2a 74%, #2a2b2a 77%, #ff8966 77%, #ff8966 78%, #2a2b2a 78%, #2a2b2a 81%, #ff8966 81%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.slana-hornad {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 38%, #2a2b2a 38%, #2a2b2a 41%, #ff8966 41%, #ff8966 45%, #2a2b2a 45%);
+}
+.name.slana-bodva {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 38%, #2a2b2a 38%, #2a2b2a 41%, #ff8966 41%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 62%, #2a2b2a 62%);
+}
+.name.slana-muran {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 38%, #2a2b2a 38%, #2a2b2a 41%, #ff8966 41%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.rimava {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 38%, #2a2b2a 38%, #2a2b2a 41%, #ff8966 41%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 76%, #2a2b2a 76%, #2a2b2a 79%, #ff8966 79%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.muran {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 38%, #2a2b2a 38%, #2a2b2a 41%, #ff8966 41%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 75%, #2a2b2a 75%, #2a2b2a 80%, #ff8966 80%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.hangony {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 38%, #2a2b2a 38%, #2a2b2a 41%, #ff8966 41%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%, #2a2b2a 72%, #ff8966 72%, #ff8966 74%, #2a2b2a 74%, #2a2b2a 77%, #ff8966 77%, #ff8966 78%, #2a2b2a 78%, #2a2b2a 81%, #ff8966 81%, #ff8966 83%, #2a2b2a 83%);
+}
+.name.bodva {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 38%, #2a2b2a 38%, #2a2b2a 41%, #ff8966 41%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%);
+}
+.name.hornad-torysa {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 37%, #2a2b2a 37%, #2a2b2a 42%, #ff8966 42%, #ff8966 45%, #2a2b2a 45%);
+}
+.name.hornad-levocsky {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 37%, #2a2b2a 37%, #2a2b2a 42%, #ff8966 42%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 62%, #2a2b2a 62%);
+}
+.name.levocsky {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 37%, #2a2b2a 37%, #2a2b2a 42%, #ff8966 42%, #ff8966 45%, #2a2b2a 45%, #2a2b2a 55%, #ff8966 55%, #ff8966 57%, #2a2b2a 57%, #2a2b2a 60%, #ff8966 60%, #ff8966 62%, #2a2b2a 62%);
+}
+.name.torysa {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 24%, #2a2b2a 24%, #2a2b2a 34%, #ff8966 34%, #ff8966 36%, #2a2b2a 36%, #2a2b2a 39%, #ff8966 39%, #ff8966 40%, #2a2b2a 40%, #2a2b2a 43%, #ff8966 43%, #ff8966 45%, #2a2b2a 45%);
+}
+.name.hortobagy {
+  background-image: linear-gradient(120deg, #2a2b2a, #2a2b2a 17%, #ff8966 17%, #ff8966 19%, #2a2b2a 19%, #2a2b2a 22%, #ff8966 22%, #ff8966 24%, #2a2b2a 24%);
+}
+.name.poprad {
+  background-image: linear-gradient(120deg, #ff8966, #ff8966 17%, #2a2b2a 17%, #2a2b2a 24%, #ff8966 24%);
+}
+.name.kryniczanka {
+  background-image: linear-gradient(120deg, #ff8966, #ff8966 17%, #2a2b2a 17%, #2a2b2a 19%, #ff8966 19%, #ff8966 22%, #2a2b2a 22%, #2a2b2a 24%, #ff8966 24%);
+}
+.discs .name {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  background-clip: initial;
+  border-radius: 50%;
+  vertical-align: middle;
 }
     </style>
 </head>
 <body>
     <div>
-        <button onclick="for(let x of document.getElementsByTagName('li')){x.className=(x.className?'':'model')}"></button>
+        <button onclick="document.getElementsByTagName('ol')[0].classList.toggle('model')"></button>
+        <button onclick="document.getElementsByTagName('ol')[0].classList.toggle('discs')"></button>
         <ol start="0">
-            <li style='top: 0.0em;'><span class='name' style='font-size: 488.62767011294%;'>Košice</span> (0.0 km, 238757)</li>
-            <li style='top: 69.9em;'><span class='name' style='font-size: 106.45186705737%;'>Moldava nad Bodvou</span> (23.3 km, 11332)</li>
-            <li style='top: 87.0em;'><span class='name' style='font-size: 297.791873629889%;'>Prešov</span> (29.0 km, 88680)</li>
-            <li style='top: 108.0em;'><span class='name' style='font-size: 156.834307471293%;'>Trebišov</span> (36.0 km, 24597)</li>
-            <li style='top: 108.6em;'><span class='name' style='font-size: 149.883287927641%;'>Vranov nad Topľou</span> (36.2 km, 22465)</li>
-            <li style='top: 128.4em;'><span class='name' style='font-size: 112.694276695846%;'>Sabinov</span> (42.8 km, 12700)</li>
-            <li style='top: 141.3em;'><span class='name' style='font-size: 124.975997695558%;'>Nové Mesto pod Šiatrom</span> (47.1 km, 15619)</li>
-            <li style='top: 143.4em;'><span class='name' style='font-size: 197.610728453695%;'>Michalovce</span> (47.8 km, 39050)</li>
-            <li style='top: 150.0em;'><span class='name' style='font-size: 113.666177907063%;'>Blatný Potok</span> (50.0 km, 12920)</li>
-            <li style='top: 157.8em;'><span class='name' style='font-size: 182.183972950422%;'>Humenné</span> (52.6 km, 33191)</li>
-            <li style='top: 159.9em;'><span class='name' style='font-size: 138.499097469984%;'>Rožňava</span> (53.3 km, 19182)</li>
-            <li style='top: 170.4em;'><span class='name' style='font-size: 192.857460317199%;'>Spišská Nová Ves</span> (56.8 km, 37194)</li>
-            <li style='top: 176.7em;'><span class='name' style='font-size: 121.478393140509%;'>Levoča</span> (58.9 km, 14757)</li>
-            <li style='top: 178.8em;'><span class='name' style='font-size: 102.703456611742%;'>Stropkov</span> (59.6 km, 10548)</li>
-            <li style='top: 183.9em;'><span class='name' style='font-size: 100.503731274018%;'>Edelín</span> (61.3 km, 10101)</li>
-            <li style='top: 186.9em;'><span class='name' style='font-size: 180.136059688226%;'>Bardejov</span> (62.3 km, 32449)</li>
-            <li style='top: 204.6em;'><span class='name' style='font-size: 104.273678366115%;'>Svidník</span> (68.2 km, 10873)</li>
-            <li style='top: 207.0em;'><span class='name' style='font-size: 170.026468527697%;'>Kazinec</span> (69.0 km, 28909)</li>
-            <li style='top: 208.2em;'><span class='name' style='font-size: 109.92724866929%;'>Sajószentpéter</span> (69.4 km, 12084)</li>
-            <li style='top: 213.9em;'><span class='name' style='font-size: 140.338875583354%;'>Snina</span> (71.3 km, 19695)</li>
-            <li style='top: 227.7em;'><span class='name' style='font-size: 127.788888405839%;'>Stará Ľubovňa</span> (75.9 km, 16330)</li>
-            <li style='top: 229.5em;'><span class='name' style='font-size: 127.988280713509%;'>Kežmarok</span> (76.5 km, 16381)</li>
-            <li style='top: 232.2em;'><span class='name' style='font-size: 337.472961879911%;'>Užhorod</span> (77.4 km, 113888)</li>
-            <li style='top: 234.9em;'><span class='name' style='font-size: 409.577831431341%;'>Miškovec</span> (78.3 km, 167754)</li>
-            <li style='top: 237.9em;'><span class='name' style='font-size: 226.503863101714%;'>Poprad</span> (79.3 km, 51304)</li>
-            <li style='top: 239.7em;'><span class='name' style='font-size: 103.715958270654%;'>Krynica-Zdrój</span> (79.9 km, 10757)</li>
-            <li style='top: 249.0em;'><span class='name' style='font-size: 129.10848151845%;'>Kisvárda</span> (83.0 km, 16669)</li>
-            <li style='top: 253.8em;'><span class='name' style='font-size: 109.940893210852%;'>Revúca</span> (84.6 km, 12087)</li>
-            <li style='top: 254.7em;'><span class='name' style='font-size: 112.334322448662%;'>Tiszavasvári</span> (84.9 km, 12619)</li>
-            <li style='top: 267.3em;'><span class='name' style='font-size: 128.491244837927%;'>Tiszaújváros</span> (89.1 km, 16510)</li>
-            <li style='top: 270.3em;'><span class='name' style='font-size: 185.458890323435%;'>Ózd</span> (90.1 km, 34395)</li>
-            <li style='top: 273.6em;'><span class='name' style='font-size: 341.871320821153%;'>Níreďháza</span> (91.2 km, 116876)</li>
-            <li style='top: 296.4em;'><span class='name' style='font-size: 130.812843406143%;'>Hajdúnánás</span> (98.8 km, 17112)</li>
-            <li style='top: 296.7em;'><span class='name' style='font-size: 154.557432690893%;'>Rimavská Sobota</span> (98.9 km, 23888)</li>
-            
+<li style='top: 0.0em;'><span class='name hornad-torysa' style='font-size: 488.62767011294%;'>Košice</span> (0.0 km, 238757)</li>
+<li style='top: 23.3em;'><span class='name bodva' style='font-size: 106.45186705737%;'>Moldava nad Bodvou</span> (23.3 km, 11332)</li>
+<li style='top: 29.0em;'><span class='name torysa' style='font-size: 297.791873629889%;'>Prešov</span> (29.0 km, 88680)</li>
+<li style='top: 36.0em;'><span class='name trnavka' style='font-size: 156.834307471293%;'>Trebišov</span> (36.0 km, 24597)</li>
+<li style='top: 36.2em;'><span class='name topla' style='font-size: 149.883287927641%;'>Vranov nad Topľou</span> (36.2 km, 22465)</li>
+<li style='top: 42.8em;'><span class='name torysa' style='font-size: 112.694276695846%;'>Sabinov</span> (42.8 km, 12700)</li>
+<li style='top: 47.1em;'><span class='name ronava' style='font-size: 124.975997695558%;'>Nové Mesto pod Šiatrom</span> (47.1 km, 15619)</li>
+<li style='top: 47.8em;'><span class='name laborec-uh' style='font-size: 197.610728453695%;'>Michalovce</span> (47.8 km, 39050)</li>
+<li style='top: 50.0em;'><span class='name bodrog' style='font-size: 113.666177907063%;'>Blatný Potok</span> (50.0 km, 12920)</li>
+<li style='top: 52.6em;'><span class='name laborec-uh' style='font-size: 182.183972950422%;'>Humenné</span> (52.6 km, 33191)</li>
+<li style='top: 53.3em;'><span class='name slana-muran' style='font-size: 138.499097469984%;'>Rožňava</span> (53.3 km, 19182)</li>
+<li style='top: 56.8em;'><span class='name hornad-levocsky' style='font-size: 192.857460317199%;'>Spišská Nová Ves</span> (56.8 km, 37194)</li>
+<li style='top: 58.9em;'><span class='name levocsky' style='font-size: 121.478393140509%;'>Levoča</span> (58.9 km, 14757)</li>
+<li style='top: 59.6em;'><span class='name ondava-topla' style='font-size: 102.703456611742%;'>Stropkov</span> (59.6 km, 10548)</li>
+<li style='top: 61.3em;'><span class='name bodva' style='font-size: 100.503731274018%;'>Edelín</span> (61.3 km, 10101)</li>
+<li style='top: 62.3em;'><span class='name topla' style='font-size: 180.136059688226%;'>Bardejov</span> (62.3 km, 32449)</li>
+<li style='top: 68.2em;'><span class='name ondava-topla' style='font-size: 104.273678366115%;'>Svidník</span> (68.2 km, 10873)</li>
+<li style='top: 69.0em;'><span class='name slana-bodva' style='font-size: 170.026468527697%;'>Kazinec</span> (69.0 km, 28909)</li>
+<li style='top: 69.4em;'><span class='name slana-bodva' style='font-size: 109.92724866929%;'>Sajószentpéter</span> (69.4 km, 12084)</li>
+<li style='top: 71.3em;'><span class='name cirocha' style='font-size: 140.338875583354%;'>Snina</span> (71.3 km, 19695)</li>
+<li style='top: 75.9em;'><span class='name poprad' style='font-size: 127.788888405839%;'>Stará Ľubovňa</span> (75.9 km, 16330)</li>
+<li style='top: 76.5em;'><span class='name poprad' style='font-size: 127.988280713509%;'>Kežmarok</span> (76.5 km, 16381)</li>
+<li style='top: 77.4em;'><span class='name uh' style='font-size: 337.472961879911%;'>Užhorod</span> (77.4 km, 113888)</li>
+<li style='top: 78.3em;'><span class='name slana-hornad' style='font-size: 409.577831431341%;'>Miškovec</span> (78.3 km, 167754)</li>
+<li style='top: 79.3em;'><span class='name poprad' style='font-size: 226.503863101714%;'>Poprad</span> (79.3 km, 51304)</li>
+<li style='top: 79.9em;'><span class='name kryniczanka' style='font-size: 103.715958270654%;'>Krynica-Zdrój</span> (79.9 km, 10757)</li>
+<li style='top: 83.0em;'><span class='name tisa-bodrog' style='font-size: 129.10848151845%;'>Kisvárda</span> (83.0 km, 16669)</li>
+<li style='top: 84.6em;'><span class='name muran' style='font-size: 109.940893210852%;'>Revúca</span> (84.6 km, 12087)</li>
+<li style='top: 84.9em;'><span class='name hortobagy' style='font-size: 112.334322448662%;'>Tiszavasvári</span> (84.9 km, 12619)</li>
+<li style='top: 89.1em;'><span class='name tisa' style='font-size: 128.491244837927%;'>Tiszaújváros</span> (89.1 km, 16510)</li>
+<li style='top: 90.1em;'><span class='name hangony' style='font-size: 185.458890323435%;'>Ózd</span> (90.1 km, 34395)</li>
+<li style='top: 91.2em;'><span class='name tisa-slana' style='font-size: 341.871320821153%;'>Níreďháza</span> (91.2 km, 116876)</li>
+<li style='top: 98.8em;'><span class='name hortobagy' style='font-size: 130.812843406143%;'>Hajdúnánás</span> (98.8 km, 17112)</li>
+<li style='top: 98.9em;'><span class='name rimava' style='font-size: 154.557432690893%;'>Rimavská Sobota</span> (98.9 km, 23888)</li>
         </ol>
     </div>
 </body>

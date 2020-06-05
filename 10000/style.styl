@@ -16,7 +16,7 @@ body
     max-width 720px
     margin 0 auto
 
-.model
+.model li
   position absolute
   height 4rem
   padding-top auto
@@ -26,21 +26,74 @@ button
   width 3em
   height 3em
   position fixed
-  top 1em
   right 1em
   border none
   border-radius 20%
+  &:first-of-type
+    top 1em
+  &:last-of-type
+    bottom 1em
 
 .name
   font-weight bold
   color charleston-green
   background-clip text
   color transparent
-  :first-child > &
-    color pink-orange
   &.tisa
-    background-image linear-gradient(120deg, cg, cg 17%, po 17%)
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%)
   &.tisa-slana
-    background-image linear-gradient(0deg, cg, cg 17%, po 17%, po 30%, cg 30%, cg 32%, po 32%, po 34%, cg 34%)
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%)
   &.tisa-bodrog
-    background-image linear-gradient(0deg, cg, cg 17%, po 17%, po 30%, cg 30%, cg 32%, po 32%, po 34%, cg 34%)
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 62%, cg 62%)
+  &.bodrog
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%)
+  &.ondava-topla
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 83%, cg 83%)
+  &.topla
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 78%, cg 78%, cg 81%, po 81%, po 83%, cg 83%)
+  &.laborec-uh
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 76%, cg 76%, cg 79%, po 79%, po 83%, cg 83%)
+  &.cirocha
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 76%, cg 76%, cg 79%, po 79%, po 83%, cg 83%, cg 93%, po 93%, po 97%, cg 97%)
+  &.uh
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 74%, cg 74%, cg 77%, po 77%, po 83%, cg 83%)
+  &.trnavka
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 75%, cg 75%, cg 80%, po 80%, po 83%, cg 83%)
+  &.ronava
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 74%, cg 74%, cg 77%, po 77%, po 78%, cg 78%, cg 81%, po 81%, po 83%, cg 83%)
+  &.slana-hornad
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 38%, cg 38%, cg 41%, po 41%, po 45%, cg 45%)
+  &.slana-bodva
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 38%, cg 38%, cg 41%, po 41%, po 45%, cg 45%, cg 55%, po 55%, po 62%, cg 62%)
+  &.slana-muran
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 38%, cg 38%, cg 41%, po 41%, po 45%, cg 45%, cg 55%, po 55%, po 62%, cg 62%, cg 72%, po 72%, po 83%, cg 83%)
+  &.rimava
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 38%, cg 38%, cg 41%, po 41%, po 45%, cg 45%, cg 55%, po 55%, po 62%, cg 62%, cg 72%, po 72%, po 76%, cg 76%, cg 79%, po 79%, po 83%, cg 83%)
+  &.muran
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 38%, cg 38%, cg 41%, po 41%, po 45%, cg 45%, cg 55%, po 55%, po 62%, cg 62%, cg 72%, po 72%, po 75%, cg 75%, cg 80%, po 80%, po 83%, cg 83%)
+  &.hangony
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 38%, cg 38%, cg 41%, po 41%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%, cg 72%, po 72%, po 74%, cg 74%, cg 77%, po 77%, po 78%, cg 78%, cg 81%, po 81%, po 83%, cg 83%)
+  &.bodva
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 38%, cg 38%, cg 41%, po 41%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%)
+  &.hornad-torysa
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 37%, cg 37%, cg 42%, po 42%, po 45%, cg 45%)
+  &.hornad-levocsky
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 37%, cg 37%, cg 42%, po 42%, po 45%, cg 45%, cg 55%, po 55%, po 62%, cg 62%)
+  &.levocsky
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 37%, cg 37%, cg 42%, po 42%, po 45%, cg 45%, cg 55%, po 55%, po 57%, cg 57%, cg 60%, po 60%, po 62%, cg 62%)
+  &.torysa
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 24%, cg 24%, cg 34%, po 34%, po 36%, cg 36%, cg 39%, po 39%, po 40%, cg 40%, cg 43%, po 43%, po 45%, cg 45%)
+  &.hortobagy
+    background-image linear-gradient(120deg, cg, cg 17%, po 17%, po 19%, cg 19%, cg 22%, po 22%, po 24%, cg 24%)
+  &.poprad
+    background-image linear-gradient(120deg, po, po 17%, cg 17%, cg 24%, po 24%)
+  &.kryniczanka
+    background-image linear-gradient(120deg, po, po 17%, cg 17%, cg 19%, po 19%, po 22%, cg 22%, cg 24%, po 24%)
+    
+  .discs &
+    display inline-block
+    width 4em
+    height 4em
+    background-clip initial
+    border-radius 50%
+    vertical-align middle

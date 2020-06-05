@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10000</title>
     <style>
-      +STYLE
+      $ stylus -p style.styl
     </style>
 </head>
 <body>
     <div>
-        <button onclick="for(let x of document.getElementsByTagName('li')){x.className=(x.className?'':'model')}"></button>
+        <button onclick="document.getElementsByTagName('ol')[0].classList.toggle('model')"></button>
+        <button onclick="document.getElementsByTagName('ol')[0].classList.toggle('discs')"></button>
         <ol start="0">
-          +GEN
+          $ csi5.2 -s gen.scm
         </ol>
     </div>
 </body>

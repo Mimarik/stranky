@@ -6,8 +6,8 @@
     (display
       (conc
         "<li style='top: "
-        (list-ref a 1)
-        "em;'><span class='name "
+        (* 3 (list-ref a 1))
+        "rem;'><span class='name "
         (list-ref a 3)
         "' style='font-size: "
         (sqrt (list-ref a 2))
